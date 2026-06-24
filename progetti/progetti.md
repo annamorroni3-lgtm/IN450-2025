@@ -1,8 +1,7 @@
 # Progetti di crittoanalisi in Wolfram Mathematica
 ## Classificazione A, B e A*
 
-**Data di verifica dei riferimenti:** 24 giugno 2026  
-**Ambiente di lavoro:** Wolfram Mathematica, in un notebook autonomo e riproducibile.
+**Ambiente di lavoro:** Wolfram Mathematica, in un notebook autonomo e riproducibile, e/o file .wl "di libreria".
 
 ## Convenzione della classificazione
 
