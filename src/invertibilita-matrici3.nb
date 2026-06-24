@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      1907,         64]
+NotebookOptionsPosition[      1431,         47]
+NotebookOutlinePosition[      1826,         63]
+CellTagsIndexPosition[      1783,         60]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AlphaTest", "[", "x_", "]"}], ":=", 
+  RowBox[{"97", "<=", "x", "<=", "122"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ToCode", "[", "text_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{"ToCharacterCode", "@", 
+      RowBox[{"ToLowerCase", "[", "text", "]"}]}], ",", "AlphaTest"}], "]"}], 
+   "-", "97"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ToCode", "[", "\"\<JULY\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.981445296890267*^9, 3.981445406303933*^9}},
+ CellLabel->
+  "In[142]:=",ExpressionUUID->"f0daeddc-228f-4de9-b33f-a3037198861f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"9", ",", "20", ",", "11", ",", "24"}], "}"}]], "Output",
+ CellChangeTimes->{3.981445407534239*^9},
+ CellLabel->
+  "Out[144]=",ExpressionUUID->"bdc6bf5c-5979-427a-83fa-6a3ebd34f68d"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 629}, {-221, Automatic}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"01b08ffa-66c8-483c-9a2e-16cc95edbf14"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 615, 15, 70, "Input",ExpressionUUID->"f0daeddc-228f-4de9-b33f-a3037198861f"],
+Cell[1194, 39, 221, 5, 52, "Output",ExpressionUUID->"bdc6bf5c-5979-427a-83fa-6a3ebd34f68d"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
