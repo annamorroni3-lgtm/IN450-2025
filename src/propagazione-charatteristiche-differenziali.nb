@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Wolfram 14.3' *)
+(* CreatedBy='Wolfram 15.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    155416,       2892]
-NotebookOptionsPosition[    152020,       2829]
-NotebookOutlinePosition[    152444,       2846]
-CellTagsIndexPosition[    152401,       2843]
+NotebookDataLength[    165367,       3069]
+NotebookOptionsPosition[    161586,       2998]
+NotebookOutlinePosition[    162252,       3021]
+CellTagsIndexPosition[    162159,       3016]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2824,13 +2824,182 @@ Cell[BoxData[
  CellChangeTimes->{3.830259144878908*^9, 3.857221942345992*^9, 
   3.955435304740963*^9, 3.955691822785226*^9},
  CellLabel->
-  "Out[1070]=",ExpressionUUID->"04c217d4-0237-4db5-8433-f5dbc80223f0"]
+  "Out[1070]=",ExpressionUUID->"04c217d4-0237-4db5-8433-f5dbc80223f0"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Progress`ProgressDump`forceRedraw$$, 
+  Progress`ProgressDump`open$$ = True, Progress`ProgressDump`clock$$ = 0, 
+  Progress`ProgressDump`maxTime$$ = DirectedInfinity[1]}, 
+  OverlayBox[{
+   AnimatorBox[Dynamic[Progress`ProgressDump`clock$$], {0., 
+     DirectedInfinity[1], 0.4},
+    AnimationRate->1,
+    AnimationRunTime->0.,
+    AppearanceElements->None,
+    ImageSize->{1, 1}], 
+   DynamicWrapperBox[
+    DynamicBox[ToBoxes[
+      Progress`GenerateProgressPanel[<|
+       "ByteCountCurrent" :> 
+        Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, "Bytes",
+           None], "ByteCountTotal" :> 
+        Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, "Total",
+           None], "ElapsedTime" :> Automatic, "Progress" :> 
+        With[{CURLLink`URLFetchProgressLogger`Private`total = 
+           Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+             "Total", 0], CURLLink`URLFetchProgressLogger`Private`rcvd = 
+           Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+             "Bytes", 0]}, 
+          If[
+           And[
+            NumericQ[CURLLink`URLFetchProgressLogger`Private`rcvd], 
+            NumericQ[CURLLink`URLFetchProgressLogger`Private`total], 
+            Positive[CURLLink`URLFetchProgressLogger`Private`total]], 
+           CURLLink`URLFetchProgressLogger`Private`rcvd/
+           CURLLink`URLFetchProgressLogger`Private`total, None]], "Text" :> 
+        Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+           "Operation", "Connecting"] <> "\[Ellipsis]"|>, <|{
+        "DelayedTask" -> ScheduledTaskObject[4, 
+           HoldForm[If[
+              AssociationQ[Progress`ProgressDump`this$state$16026], 
+              AppendTo[Progress`ProgressDump`this$state$16026, 
+                Progress`ProgressDump`CreateProgressState[
+                Progress`ProgressDump`parameters$16026, 
+                 Progress`ProgressDump`info$16026, "Delay" :> 0.5]]; Null, 
+              Progress`ProgressDump`this$state$16026 = 
+              Progress`ProgressDump`CreateProgressState[
+               Progress`ProgressDump`parameters$16026, 
+                Progress`ProgressDump`info$16026, "Delay" :> 0.5]]; 
+            Progress`ProgressDump`ProgressInit[
+             Progress`ProgressDump`this$state$16026]; Null], {0.5, 1}, 
+           Automatic, True, "AutoRemove" -> False, "EpilogFunction" :> Null, 
+           "TaskGroup" -> "Global`"], "State" :> 
+         Progress`ProgressDump`this$state$16026, "Title" -> "Computing...", 
+         "Type" -> "Panel", "Environment" -> "Notebook", 
+         "Parameters" -> <|
+          "ByteCountCurrent" :> 
+           Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+             "Bytes", None], "ByteCountTotal" :> 
+           Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+             "Total", None], "ElapsedTime" :> Automatic, "Progress" :> 
+           With[{CURLLink`URLFetchProgressLogger`Private`total = 
+              Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+                "Total", 0], CURLLink`URLFetchProgressLogger`Private`rcvd = 
+              Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+                "Bytes", 0]}, 
+             If[
+              And[
+               NumericQ[CURLLink`URLFetchProgressLogger`Private`rcvd], 
+               NumericQ[CURLLink`URLFetchProgressLogger`Private`total], 
+               Positive[CURLLink`URLFetchProgressLogger`Private`total]], 
+              CURLLink`URLFetchProgressLogger`Private`rcvd/
+              CURLLink`URLFetchProgressLogger`Private`total, None]], "Text" :> 
+           Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+              "Operation", "Connecting"] <> "\[Ellipsis]"|>, "PreemptibleQ" -> 
+         True, "ConsoleQ" -> True, "Evaluator" -> "System", "EvaluationCell" -> 
+         CellObject[
+          "7a8076b2-315a-1846-952d-c88f1bb1d489", 
+           "756fca7c-331d-4a67-8d29-d2edbd2783c5"], "TimeStart" -> 
+         3.992678060532973`16.353839282532164*^9, "TimeStartLocal" -> 
+         3.992678060532973`16.353839282532164*^9, "InitialTimeEstimate" -> 
+         Indeterminate, "UpdateInterval" -> 0.4, "OuterUpdateInterval" -> 0.4,
+          "Buttons" -> None, "Optional" -> {}, "ContainerQ" -> False, 
+         "CreateContainerQ" -> False, "CurrentContainer" -> None, 
+         "PreviousContainer" -> None, "ContainerName" -> None, "Cell" -> 
+         Hold[Progress`ProgressDump`cell$16038], "Clock" :> 
+         Dynamic[Progress`ProgressDump`clock$$], "Redraw" -> 
+         Progress`ProgressDump`forceRedraw$$, "Open" :> 
+         Dynamic[Progress`ProgressDump`open$$]}|>], StandardForm],
+     TrackedSymbols:>{Progress`ProgressDump`forceRedraw$$}], Refresh[
+    Progress`ProgressDump`forceRedraw$$ = 
+     With[{Progress`ProgressDump`values = Quiet[
+          
+          Values[<|"ByteCountCurrent" :> 
+            Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+              "Bytes", None], "ByteCountTotal" :> 
+            Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+              "Total", None], "ElapsedTime" :> Automatic, "Progress" :> 
+            With[{CURLLink`URLFetchProgressLogger`Private`total = 
+               Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+                 "Total", 0], CURLLink`URLFetchProgressLogger`Private`rcvd = 
+               Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+                 "Bytes", 0]}, 
+              If[
+               And[
+                NumericQ[CURLLink`URLFetchProgressLogger`Private`rcvd], 
+                NumericQ[CURLLink`URLFetchProgressLogger`Private`total], 
+                Positive[CURLLink`URLFetchProgressLogger`Private`total]], 
+               CURLLink`URLFetchProgressLogger`Private`rcvd/
+               CURLLink`URLFetchProgressLogger`Private`total, None]], "Text" :> 
+            Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+               "Operation", "Connecting"] <> "\[Ellipsis]"|>]]}, 
+       Map[
+       Position[Progress`ProgressDump`values, #, Infinity]& , {
+        None, Automatic}]], UpdateInterval -> 
+     Lookup[<|"DelayedTask" -> ScheduledTaskObject[4, 
+          HoldForm[If[
+             AssociationQ[Progress`ProgressDump`this$state$16026], 
+             AppendTo[Progress`ProgressDump`this$state$16026, 
+               Progress`ProgressDump`CreateProgressState[
+               Progress`ProgressDump`parameters$16026, 
+                Progress`ProgressDump`info$16026, "Delay" :> 0.5]]; Null, 
+             Progress`ProgressDump`this$state$16026 = 
+             Progress`ProgressDump`CreateProgressState[
+              Progress`ProgressDump`parameters$16026, 
+               Progress`ProgressDump`info$16026, "Delay" :> 0.5]]; 
+           Progress`ProgressDump`ProgressInit[
+            Progress`ProgressDump`this$state$16026]; Null], {0.5, 1}, 
+          Automatic, True, "AutoRemove" -> False, "EpilogFunction" :> Null, 
+          "TaskGroup" -> "Global`"], "State" :> 
+        Progress`ProgressDump`this$state$16026, "Title" -> "Computing...", 
+        "Type" -> "Panel", "Environment" -> "Notebook", 
+        "Parameters" -> <|
+         "ByteCountCurrent" :> 
+          Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+            "Bytes", None], "ByteCountTotal" :> 
+          Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+            "Total", None], "ElapsedTime" :> Automatic, "Progress" :> 
+          With[{CURLLink`URLFetchProgressLogger`Private`total = 
+             Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+               "Total", 0], CURLLink`URLFetchProgressLogger`Private`rcvd = 
+             Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+               "Bytes", 0]}, 
+            If[
+             And[
+              NumericQ[CURLLink`URLFetchProgressLogger`Private`rcvd], 
+              NumericQ[CURLLink`URLFetchProgressLogger`Private`total], 
+              Positive[CURLLink`URLFetchProgressLogger`Private`total]], 
+             CURLLink`URLFetchProgressLogger`Private`rcvd/
+             CURLLink`URLFetchProgressLogger`Private`total, None]], "Text" :> 
+          Lookup[CURLLink`URLFetchProgressLogger`Private`$progressData, 
+             "Operation", "Connecting"] <> "\[Ellipsis]"|>, "PreemptibleQ" -> 
+        True, "ConsoleQ" -> True, "Evaluator" -> "System", "EvaluationCell" -> 
+        CellObject[
+         "7a8076b2-315a-1846-952d-c88f1bb1d489", 
+          "756fca7c-331d-4a67-8d29-d2edbd2783c5"], "TimeStart" -> 
+        3.992678060532973`16.353839282532164*^9, "TimeStartLocal" -> 
+        3.992678060532973`16.353839282532164*^9, "InitialTimeEstimate" -> 
+        Indeterminate, "UpdateInterval" -> 0.4, "OuterUpdateInterval" -> 0.4, 
+        "Buttons" -> None, "Optional" -> {}, "ContainerQ" -> False, 
+        "CreateContainerQ" -> False, "CurrentContainer" -> None, 
+        "PreviousContainer" -> None, "ContainerName" -> None, "Cell" -> 
+        Hold[Progress`ProgressDump`cell$16038], "Clock" -> Dynamic[None]|>, 
+       "OuterUpdateInterval"], TrackedSymbols :> {}],
+    ImageSizeCache->{
+     376.24320000000006`, {18.7930149435997, 29.3750461935997}}]}, All, 2],
+  DynamicModuleValues:>{}]], "PrintTemporary",
+ ShowCellLabel->True,
+ CellChangeTimes->{3.992678061061714*^9},
+ CellTags->"NotebookAssistantChatbarCell",
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e418eb5d-e34b-4ca1-b3d7-0ac2071aaae0"]
 }, Open  ]]
 },
 WindowSize->{1503, 1011},
 WindowMargins->{{365, Automatic}, {Automatic, 53}},
 Magnification:>2. Inherited,
-FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (May 19, 2026)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"3fb00958-5489-480c-b303-f38a1285bc11"
 ]
@@ -2838,10 +3007,16 @@ ExpressionUUID->"3fb00958-5489-480c-b303-f38a1285bc11"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "NotebookAssistantChatbarCell"->{
+  Cell[152007, 2828, 9563, 167, 70, "PrintTemporary",ExpressionUUID->"e418eb5d-e34b-4ca1-b3d7-0ac2071aaae0",
+   CellTags->"NotebookAssistantChatbarCell"]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"NotebookAssistantChatbarCell", 161980, 3010}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
@@ -2860,39 +3035,41 @@ Cell[6459, 183, 575, 16, 58, "Input",ExpressionUUID->"bc59d1dc-75cf-44b3-96b4-42
 Cell[7037, 201, 2351, 51, 634, "Output",ExpressionUUID->"5cec18a1-db22-4b90-8689-bf74b681694d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9425, 257, 345, 8, 58, "Input",ExpressionUUID->"bc5ce026-43ac-4c56-b914-8d17d8746fa6"],
-Cell[9773, 267, 1452, 30, 752, "Output",ExpressionUUID->"688c6648-4595-4c4c-916e-707912b24d13"]
+Cell[9425, 257, 345, 8, 70, "Input",ExpressionUUID->"bc5ce026-43ac-4c56-b914-8d17d8746fa6"],
+Cell[9773, 267, 1452, 30, 70, "Output",ExpressionUUID->"688c6648-4595-4c4c-916e-707912b24d13"]
 }, Open  ]],
-Cell[11240, 300, 236, 6, 58, "Input",ExpressionUUID->"f1315912-7042-4432-972c-8cd70eb5c888"],
+Cell[11240, 300, 236, 6, 70, "Input",ExpressionUUID->"f1315912-7042-4432-972c-8cd70eb5c888"],
 Cell[CellGroupData[{
-Cell[11501, 310, 964, 24, 140, "Input",ExpressionUUID->"c133535d-4aaf-42bb-b1ed-8c065962d3ff"],
-Cell[12468, 336, 422, 7, 66, "Output",ExpressionUUID->"cf31c8b4-f46d-405e-aac0-e2139080f4cc"],
-Cell[12893, 345, 1329, 36, 600, "Output",ExpressionUUID->"ea214f21-5890-46b4-aee8-8122f7eb47ca"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[14259, 386, 159, 3, 58, "Input",ExpressionUUID->"d9f2ed58-5c6e-43da-a7a2-6317f0af2014"],
-Cell[14421, 391, 420, 7, 66, "Output",ExpressionUUID->"aa2938f0-c41b-4bc3-9bd5-a59013a444fb"]
+Cell[11501, 310, 964, 24, 70, "Input",ExpressionUUID->"c133535d-4aaf-42bb-b1ed-8c065962d3ff"],
+Cell[12468, 336, 422, 7, 70, "Output",ExpressionUUID->"cf31c8b4-f46d-405e-aac0-e2139080f4cc"],
+Cell[12893, 345, 1329, 36, 70, "Output",ExpressionUUID->"ea214f21-5890-46b4-aee8-8122f7eb47ca"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14878, 403, 660, 18, 99, "Input",ExpressionUUID->"6a412259-d2dd-4794-b173-3377f69fca03"],
-Cell[15541, 423, 278, 5, 66, "Output",ExpressionUUID->"b5262474-513a-4a06-8f0a-2fe6f648d1ef"],
-Cell[15822, 430, 600, 17, 66, "Output",ExpressionUUID->"ab0757eb-6ac2-4a8e-9ff7-cf745ddd4b7f"]
+Cell[14259, 386, 159, 3, 70, "Input",ExpressionUUID->"d9f2ed58-5c6e-43da-a7a2-6317f0af2014"],
+Cell[14421, 391, 420, 7, 70, "Output",ExpressionUUID->"aa2938f0-c41b-4bc3-9bd5-a59013a444fb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16459, 452, 1886, 46, 344, "Input",ExpressionUUID->"2bd6ef65-c278-4c7f-9032-c7b619467bec"],
-Cell[18348, 500, 116041, 1931, 979, "Output",ExpressionUUID->"74d97b7f-e22d-40a6-adc2-2093a5481e07"]
+Cell[14878, 403, 660, 18, 70, "Input",ExpressionUUID->"6a412259-d2dd-4794-b173-3377f69fca03"],
+Cell[15541, 423, 278, 5, 70, "Output",ExpressionUUID->"b5262474-513a-4a06-8f0a-2fe6f648d1ef"],
+Cell[15822, 430, 600, 17, 70, "Output",ExpressionUUID->"ab0757eb-6ac2-4a8e-9ff7-cf745ddd4b7f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134426, 2436, 194, 3, 58, "Input",ExpressionUUID->"08d207d6-7654-4c6c-93a7-ef153cf1bc99"],
-Cell[134623, 2441, 153, 2, 66, "Output",ExpressionUUID->"d14c9697-125c-4e75-aab0-1f3108802a50"]
+Cell[16459, 452, 1886, 46, 70, "Input",ExpressionUUID->"2bd6ef65-c278-4c7f-9032-c7b619467bec"],
+Cell[18348, 500, 116041, 1931, 70, "Output",ExpressionUUID->"74d97b7f-e22d-40a6-adc2-2093a5481e07"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134813, 2448, 1569, 43, 181, "Input",ExpressionUUID->"9f1d0b9d-3925-4070-aee9-f78f97c83b49"],
-Cell[136385, 2493, 11609, 235, 115, "Output",ExpressionUUID->"2ae13cdf-24a8-4e04-bfaf-52958a31958b"]
+Cell[134426, 2436, 194, 3, 70, "Input",ExpressionUUID->"08d207d6-7654-4c6c-93a7-ef153cf1bc99"],
+Cell[134623, 2441, 153, 2, 70, "Output",ExpressionUUID->"d14c9697-125c-4e75-aab0-1f3108802a50"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[148031, 2733, 265, 5, 58, "Input",ExpressionUUID->"15515db8-99b3-47cc-ae0f-2a98a3fb796b"],
-Cell[148299, 2740, 3705, 86, 679, "Output",ExpressionUUID->"04c217d4-0237-4db5-8433-f5dbc80223f0"]
+Cell[134813, 2448, 1569, 43, 70, "Input",ExpressionUUID->"9f1d0b9d-3925-4070-aee9-f78f97c83b49"],
+Cell[136385, 2493, 11609, 235, 70, "Output",ExpressionUUID->"2ae13cdf-24a8-4e04-bfaf-52958a31958b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[148031, 2733, 265, 5, 70, "Input",ExpressionUUID->"15515db8-99b3-47cc-ae0f-2a98a3fb796b"],
+Cell[148299, 2740, 3705, 86, 70, "Output",ExpressionUUID->"04c217d4-0237-4db5-8433-f5dbc80223f0"],
+Cell[152007, 2828, 9563, 167, 70, "PrintTemporary",ExpressionUUID->"e418eb5d-e34b-4ca1-b3d7-0ac2071aaae0",
+ CellTags->"NotebookAssistantChatbarCell"]
 }, Open  ]]
 }
 ]
